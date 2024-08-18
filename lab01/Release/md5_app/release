@@ -1,0 +1,2 @@
+JAVA_VERSION="17.0.6"
+MODULES="java.base Biblioteka java.datatransfer java.xml java.prefs java.desktop Aplikacja"

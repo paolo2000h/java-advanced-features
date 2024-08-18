@@ -1,0 +1,142 @@
+<players>
+    <player>
+        <name>Robert Lewandowski</name>
+        <position>Forward</position>
+        <country>Poland</country>
+        <age>33</age>
+        <club>Bayern Munich</club>
+    </player>
+    <player>
+        <name>Lionel Messi</name>
+        <position>Forward</position>
+        <country>Argentina</country>
+        <age>34</age>
+        <club>Paris Saint-Germain</club>
+    </player>
+    <player>
+        <name>Cristiano Ronaldo</name>
+        <position>Forward</position>
+        <country>Portugal</country>
+        <age>36</age>
+        <club>Manchester United</club>
+    </player>
+    <player>
+        <name>Neymar Jr.</name>
+        <position>Forward</position>
+        <country>Brazil</country>
+        <age>29</age>
+        <club>Paris Saint-Germain</club>
+    </player>
+    <player>
+        <name>Kevin De Bruyne</name>
+        <position>Midfielder</position>
+        <country>Belgium</country>
+        <age>30</age>
+        <club>Manchester City</club>
+    </player>
+    <player>
+        <name>Sergio Ramos</name>
+        <position>Defender</position>
+        <country>Spain</country>
+        <age>35</age>
+        <club>Paris Saint-Germain</club>
+    </player>
+    <player>
+        <name>Virgil van Dijk</name>
+        <position>Defender</position>
+        <country>Netherlands</country>
+        <age>30</age>
+        <club>Liverpool</club>
+    </player>
+    <player>
+        <name>Manuel Neuer</name>
+        <position>Goalkeeper</position>
+        <country>Germany</country>
+        <age>35</age>
+        <club>Bayern Munich</club>
+    </player>
+    <player>
+        <name>Harry Kane</name>
+        <position>Forward</position>
+        <country>England</country>
+        <age>28</age>
+        <club>Tottenham Hotspur</club>
+    </player>
+    <player>
+        <name>Eden Hazard</name>
+        <position>Midfielder</position>
+        <country>Belgium</country>
+        <age>31</age>
+        <club>Real Madrid</club>
+    </player>
+    <player>
+        <name>Kylian Mbappe</name>
+        <position>Forward</position>
+        <country>France</country>
+        <age>23</age>
+        <club>Paris Saint-Germain</club>
+    </player>
+    <player>
+        <name>Toni Kroos</name>
+        <position>Midfielder</position>
+        <country>Germany</country>
+        <age>32</age>
+        <club>Real Madrid</club>
+    </player>
+    <player>
+        <name>Joshua Kimmich</name>
+        <position>Midfielder</position>
+        <country>Germany</country>
+        <age>26</age>
+        <club>Bayern Munich</club>
+    </player>
+    <player>
+        <name>Marc-Andre ter Stegen</name>
+        <position>Goalkeeper</position>
+        <country>Germany</country>
+        <age>29</age>
+        <club>Barcelona</club>
+    </player>
+    <player>
+        <name>Son Heung-min</name>
+        <position>Forward</position>
+        <country>South Korea</country>
+        <age>29</age>
+        <club>Tottenham Hotspur</club>
+    </player>
+    <player>
+        <name>Mohamed Salah</name>
+        <position>Forward</position>
+        <country>Egypt</country>
+        <age>29</age>
+        <club>Liverpool</club>
+    </player>
+    <player>
+        <name>Jan Oblak</name>
+        <position>Goalkeeper</position>
+        <country>Slovenia</country>
+        <age>29</age>
+        <club>Atletico Madrid</club>
+    </player>
+    <player>
+        <name>Paul Pogba</name>
+        <position>Midfielder</position>
+        <country>France</country>
+        <age>28</age>
+        <club>Manchester United</club>
+    </player>
+    <player>
+        <name>Antoine Griezmann</name>
+        <position>Forward</position>
+        <country>France</country>
+        <age>30</age>
+        <club>Barcelona</club>
+    </player>
+    <player>
+        <name>Karim Benzema</name>
+        <position>Forward</position>
+        <country>France</country>
+        <age>34</age>
+        <club>Real Madrid</club>
+    </player>
+</players>

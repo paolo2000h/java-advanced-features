@@ -1,0 +1,3 @@
+module ProcessingInterfaces {
+    exports processing;
+}

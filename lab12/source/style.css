@@ -1,0 +1,8 @@
+.custom-button {
+    -fx-background-color: #f4f4f4; /* Domyślny kolor tła przycisku */
+    -fx-text-fill: black; /* Domyślny kolor tekstu przycisku */
+}
+
+.custom-button:selected {
+    -fx-background-color: green; /* Kolor tła przycisku, gdy jest kliknięty */
+}

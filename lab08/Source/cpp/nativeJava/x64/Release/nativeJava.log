@@ -1,0 +1,9 @@
+﻿  pch.cpp
+  dllmain.cpp
+  processors_ProcessorNative.cpp
+     Trwa tworzenie biblioteki C:\Users\helis\source\repos\nativeJava\x64\Release\nativeJava.lib i obiektu C:\Users\helis\source\repos\nativeJava\x64\Release\nativeJava.exp
+  Trwa generowanie kodu
+  Previous IPDB not found, fall back to full compilation.
+  All 10 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Zakończono generowanie kodu
+  nativeJava.vcxproj -> C:\Users\helis\source\repos\nativeJava\x64\Release\nativeJava.dll

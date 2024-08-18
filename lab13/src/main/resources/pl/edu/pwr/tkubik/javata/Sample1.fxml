@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?language javascript?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.stage.FileChooser?>
+
+<VBox fx:id="vbox" layoutX="10.0" layoutY="10.0" prefHeight="250.0"
+      prefWidth="300.0" spacing="10" xmlns:fx="http://javafx.com/fxml/1"
+      xmlns="http://javafx.com/javafx/2.2">
+
+    <Label fx:id="outputLbl" alignment="CENTER_LEFT" cache="true"
+           cacheHint="SCALE" prefHeight="30.0" prefWidth="200.0"
+           text="Wpis do pamiętnika:" textAlignment="LEFT"/>
+    <TextArea fx:id="outputText" prefHeight="100.0"
+              prefWidth="200.0" wrapText="true"/>
+
+    <fx:script>
+        var System = Java.type("java.lang.System");
+        var Files = Java.type("java.nio.file.Files");
+        var Paths = Java.type("java.nio.file.Paths");
+
+        var userInput = "";
+
+        function buttonAction(event) {
+            userInput = inputText.getText();
+            outputText.setText(userInput);
+            System.out.println("User input: " + userInput);
+        }
+
+        function loadFile(event) {
+            var fileChooser = new javafx.stage.FileChooser();
+            var file = fileChooser.showOpenDialog(null);
+            if (file != null) {
+                var path = file.toPath();
+                var content = Files.readString(path);
+                outputText.setText(content);
+                System.out.println("File loaded: " + file.getName());
+                userInput = content;
+                updateText2();
+            }
+        }
+
+        function updateText2() {
+            var updatedText = userInput;
+            System.out.println(updatedText);
+            System.out.println(updatedText.getClass());
+            if (updatedText.contains("Imię i nazwisko")) {
+                System.out.println("Nazwisko");
+                var nameLabel2 = nameLabel;
+                var nameField2 = name;
+                var updateButton2 = updateBtn;
+
+                nameLabel2.setVisible(true);
+                nameField2.setVisible(true);
+                updateButton2.setVisible(true);
+            } else {
+                var nameLabel2 = nameLabel;
+                var nameField2 = name;
+                var updateButton2 = updateBtn;
+
+                nameLabel2.setVisible(false);
+                nameField2.setVisible(false);
+                updateButton2.setVisible(false);
+            }
+
+            if (updatedText.contains("Data")) {
+                System.out.println("Nazwisko");
+                var dateLabel2 = dateLabel;
+                var dateField2 = date;
+                var dateButton2 = updateBtn2;
+
+                dateLabel2.setVisible(true);
+                dateField2.setVisible(true);
+                dateButton2.setVisible(true);
+            } else {
+                var dateLabel2 = dateLabel;
+                var dateField2 = date;
+                var dateButton2 = updateBtn2;
+
+                dateLabel2.setVisible(false);
+                dateField2.setVisible(false);
+                dateButton2.setVisible(false);
+            }
+
+            // if (updatedText.includes("Data")) {
+            //     var date = prompt("Enter the date:");
+            //     updatedText = updatedText.replace("Data", date);
+            // }
+
+            outputText.setText(updatedText);
+        }
+
+        function updateText() {
+            var updatedText = outputText.getText();
+            var name2 = name.getText();
+            updatedText = updatedText.replace("Imię i nazwisko", name2);
+            outputText.setText(updatedText);
+        }
+
+        function updateDate() {
+            var updatedText = outputText.getText();
+            var date2 = date.getText();
+            updatedText = updatedText.replace("Data", date2);
+            outputText.setText(updatedText);
+        }
+
+    </fx:script>
+
+    <Button fx:id="loadFileBtn" alignment="CENTER_RIGHT"
+            contentDisplay="CENTER" mnemonicParsing="false"
+            onAction="loadFile(event);" text="Load File" textAlignment="CENTER"/>
+
+    <Label fx:id="nameLabel" alignment="CENTER_LEFT" cache="true"
+           cacheHint="SCALE" prefHeight="30.0" prefWidth="200.0"
+           text="Enter Name:" textAlignment="LEFT" visible="false"/>
+    <TextField fx:id="name" prefWidth="100.0" visible="false"/>
+    <Button fx:id="updateBtn" alignment="CENTER_RIGHT"
+            contentDisplay="CENTER" mnemonicParsing="false"
+            onAction="updateText();" text="Update Text" textAlignment="CENTER" visible="false"/>
+    <Label fx:id="dateLabel" alignment="CENTER_LEFT" cache="true"
+           cacheHint="SCALE" prefHeight="30.0" prefWidth="200.0"
+           text="Enter Date:" textAlignment="LEFT" visible="false"/>
+    <TextField fx:id="date" prefWidth="100.0" visible="false"/>
+    <Button fx:id="updateBtn2" alignment="CENTER_RIGHT"
+            contentDisplay="CENTER" mnemonicParsing="false"
+            onAction="updateDate();" text="Update Text" textAlignment="CENTER" visible="false"/>
+</VBox>
