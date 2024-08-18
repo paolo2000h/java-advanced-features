@@ -1,4 +1,4 @@
-Projects for laboratory - Java Advanced Features 2023
+# Projects for the course - Java Advanced Features 2023
 
 Description of each laboratory (polish):
 
@@ -30,7 +30,7 @@ Napisz aplikację, która umożliwi przeglądanie danych pomiarowych przechowywa
 Zakładamy, że pliki danych będą składowane w folderach o nazwach reprezentujących daty kampanii pomiarowych (np. nazwą folderu może być 07.03.2023), zaś nazwy samych plików będą odpowiadały identyfikatorowi stanowiska pomiarowego oraz godzinie rozpoczęcia pomiarów (np. nazwą pliku może być 0001_10:00). 
 Zawartość plików powinna odpowiadać następującemu schematowi:
 
-# godzina pomiaru; ciśnienie [hPa];  temperatura [stopnie C]; wilgotność [%]
+godzina pomiaru; ciśnienie [hPa];  temperatura [stopnie C]; wilgotność [%]
 10:00; 960,34; -1,2; 60;
 10:02; 960,34; -1,2; 60;
 ....
